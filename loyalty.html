@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Program - Bow Hotels Ltd</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Bow Hotels Ltd</h1>
+            <div class="logo">
+                <img src="hotel logo.jpg" alt="Bow Hotels Ltd Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hotel1.html">Bow Hotel Downtown</a></li>
+                    <li><a href="hotel2.html">Bow Resort & Spa</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="loyalty.html">Loyalty Program</a></li> <!-- New link to loyalty page -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Loyalty Dashboard Section -->
+    <div class="loyalty-dashboard">
+        <h2>Your Loyalty Points</h2>
+        <div class="loyalty-details">
+            <p>Current Points: <span id="pointsBalance">1200</span></p>
+            <p>Next Reward: Free Room Upgrade</p>
+            <button id="redeemPoints" class="redeem-button">Redeem Points</button>
+        </div>
+    </div>
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    <footer>
+        <div class="container">
+            <footer id="contact-footer">
+
+            <p>&copy; 2024 Bow Hotels Ltd. All Rights Reserved.</p>
+            <p>Contact us: info@bowhotels.com | +1523 423 4855</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+
+</body>
+</html>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <script>
+        // Loyalty points redemption logic
+        document.getElementById("redeemPoints").onclick = function () {
+            let points = parseInt(document.getElementById("pointsBalance").innerText);
+            if (points >= 1000) {
+                alert("Congratulations! You've redeemed enough points for a free room upgrade!");
+                // Code to apply the reward (update database, etc.)
+            } else {
+                alert("You need more points to redeem this reward.");
+            }
+        };
+    </script>
+
+</body>
+
+</html>
